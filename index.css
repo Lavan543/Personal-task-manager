@@ -1,0 +1,145 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f4f4f4;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 600px;
+  margin: 50px auto;
+  padding: 20px;
+  background-color: #fff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  text-align: center;
+  transition: all 0.3s ease-in-out;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.container:hover {
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+h1 {
+  color: #333;
+  margin-bottom: 20px;
+  font-size: 2.5em;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+form {
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+input[type="text"], select, input[type="date"], button {
+  width: 100%;
+  padding: 12px;
+  margin: 10px 0;
+  border-radius: 25px;
+  border: 1px solid #ddd;
+  box-sizing: border-box;
+  font-size: 1em;
+  transition: border-color 0.3s ease-in-out;
+}
+
+input[type="text"]:focus, select:focus, input[type="date"]:focus {
+  border-color: #007bff;
+}
+
+button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 25px;
+  transition: all 0.3s ease-in-out;
+  font-size: 1em;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+.task-list {
+  width: 100%;
+}
+
+.task {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  border-bottom: 1px solid #ddd;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.task:last-child {
+  border-bottom: none;
+}
+
+.task:hover {
+  background-color: #f9f9f9;
+}
+
+.task span {
+  flex-grow: 1;
+  padding: 0 10px;
+  text-align: left;
+}
+
+.task input[type="checkbox"] {
+  margin-right: 10px;
+  accent-color: #007bff;
+}
+
+.high-priority {
+  color: #e74c3c;
+}
+
+.medium-priority {
+  color: #f39c12;
+}
+
+.low-priority {
+  color: #27ae60;
+}
+
+.priority-tag {
+  padding: 5px 10px;
+  border-radius: 12px;
+  font-size: 0.8em;
+  margin-right: 5px;
+}
+
+.priority-tag.high {
+  background-color: #e74c3c33;
+  color: #e74c3c;
+}
+
+.priority-tag.medium {
+  background-color: #f39c1233;
+  color: #f39c12;
+}
+
+.priority-tag.low {
+  background-color: #27ae6033;
+  color: #27ae60;
+}
